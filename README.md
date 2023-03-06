@@ -15,6 +15,7 @@ This website can be used to find information regarding Megan Vincent.
 ## Link
 
 Here is the link to the live site: 
+https://mvincent15.github.io/HelloWorld_Portfolio/
 
 ## Credits
 
