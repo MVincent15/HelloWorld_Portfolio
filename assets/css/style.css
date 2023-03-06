@@ -58,15 +58,10 @@ main {
     margin: 2%;
 }
 
-section {
-    border-bottom: 1px solid var(--dark);
-}
-
 section p {
     margin:2% 0;
     font-size: 110%;
 }
-
 
 footer {
     display:flex;
@@ -74,11 +69,6 @@ footer {
     padding: 2%;
     background-color: var(--dark);
     color: var(--light);
-}
-
-.About-Me img {
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px var(--dark);
 }
 
 .About-Me h3,
@@ -89,6 +79,12 @@ footer {
     font-size: 200%;
     color: var(--dark);
 }
+
+.About-Me img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--dark);
+}
+
 
 .About-Me p {
     border-radius: 2px;
@@ -103,6 +99,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .Work img{
   width:20%;
   flex: 2 0 auto;
@@ -117,22 +114,6 @@ footer {
     padding: 10px;
     text-align: center;
 }
-
-#projectlink {
-    color: var(--light);
-    font-weight: bold;
-}
-
-#githublink {
-    color: var(--dark);
-    text-decoration: none;
-}
-#projectlink:hover,
-#githublink:hover,
-.Resume a:hover {
-    color: var(--navlink-color);
-}
-
 .Contact-Me {
     margin: 10px;
     border-style: solid;
@@ -145,8 +126,25 @@ footer {
    margin: 10px;
    background-color: var(--dark);
 }
+
 .Resume a {
     color: var(--light);
+}
+
+#projectlink {
+    color: var(--light);
+    font-weight: bold;
+}
+
+#githublink {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+#projectlink:hover,
+#githublink:hover,
+.Resume a:hover {
+    color: var(--navlink-color);
 }
 
 @media screen and (max-width: 992px) {
