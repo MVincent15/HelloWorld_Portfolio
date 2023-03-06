@@ -1,0 +1,165 @@
+:root {
+   --light: white;
+   --dark: rgb(6, 58, 6);
+   --navlink-color: rgb(200, 8, 152); 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--dark);
+    color: var(--light)
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    margin: 2% 0;
+    font-size: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+nav a {
+    background-color: unset;
+    color: var(--light);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--navlink-color);
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: 2%;
+}
+
+section p {
+    margin:2% 0;
+    font-size: 110%;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.About-Me h3,
+.Work h3,
+.Contact-Me h3,
+.Resume h3 {
+    padding:20px;
+    font-size: 200%;
+    color: var(--dark);
+}
+
+.About-Me img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--dark);
+}
+
+
+.About-Me p {
+    border-radius: 2px;
+    border-color: var(--dar);
+    border-style: solid;
+    padding: 10px;
+}
+
+.Work {
+    background-color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Work img{
+  width:20%;
+  flex: 2 0 auto;
+  box-shadow: 5px 5px 5px black;
+}
+.Work h3 {
+    color: var(--light);
+    margin: 20px;
+}
+.projects {
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+}
+.Contact-Me {
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--dark);
+}
+
+.Resume {
+   display: inline-block;
+   margin: 10px;
+   background-color: var(--dark);
+}
+
+.Resume a {
+    color: var(--light);
+}
+
+#projectlink {
+    color: var(--light);
+    font-weight: bold;
+}
+
+#githublink {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+#projectlink:hover,
+#githublink:hover,
+.Resume a:hover {
+    color: var(--navlink-color);
+}
+
+@media screen and (max-width: 992px) {
+  nav li {
+    display: flex;
+    padding: 0px;
+  }
+
+.Contact-Me {
+    border: none;
+}
+.Work{
+    flex-direction: column;
+}
+.Work img {
+    width:auto;
+}
+}
